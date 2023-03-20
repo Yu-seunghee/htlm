@@ -9,6 +9,11 @@
 <body>
     <h1>2줄 3칸 기본 표 만들기</h1>
     <table border="1" width="50%">
+        <caption>
+            <Strong>기본 테이블 입니다.</Strong>
+            <br>
+            2줄 3칸짜리 표입니다.
+        </caption>
         <!--1번줄-->
         <tr>
             <td>1</td>
@@ -27,6 +32,11 @@
     <hr>
 
     <h1>표에 제목 셀 만들기</h1>
+    <figure>
+        <figurecaption>
+            표에 제목 셀 만들기입니다.
+        </figurecaption>
+    </figure>
     <table border="1" width="100%">
         <tr>
             <td>학과</td>
@@ -59,6 +69,103 @@
             <td>10</td>
             <td>11</td>
         </tr>
+    </table>
+
+    <hr>
+
+    <h1>시간표</h1>
+
+    <!--thead, tbody, tfoot-->
+    <table border="1" width="100%">
+        <thead>
+         <tr>
+             <th>구분</th>
+             <th>월</th>
+             <th>화</th>
+             <th>수</th>
+             <th>목</th>
+             <th>금</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <th>1교시</th>
+            <td></td>
+            <td rowspan="2">S/W프로그래밍사고</td>
+            <td rowspan="2">S/W프로그래밍사고</td>
+            <td></td>
+            <td rowspan="2">공학적글쓰기</td>
+         </tr>
+         <tr>
+            <th>2교시</th>
+            <td rowspan="2">컴퓨터공학개론</td>
+            <!--<td>s/w프로그래밍사고</td>-->
+            <!--<td>s/w프로그래밍사고</td>-->
+            <td></td>
+            <!--<td>공학적글쓰기</td>-->
+         </tr>
+         <tr>
+            <th>3교시</th>
+            <!--<td>컴퓨터공학개론</td>-->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <th>4교시</th>
+            <td></td>
+            <td></td>
+            <td>컴퓨터공학개론</td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <th>5교시</th>
+            <td rowspan="2">웹제작</td>
+            <td rowspan="2">글로벌직업탐구</td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <th>6교시</th>
+            <!--<td>웹제작</td>-->
+            <!--<td>글로벌직업탐구</td>-->
+            <td></td>
+            <td>대학생활과 진로탐색</td>
+            <td></td>
+         </tr>
+         <tr>
+            <th>7교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2">웹제작</td>
+         </tr>
+         <tr>
+            <th>8교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!--<td>웹제작</td>-->
+         </tr>
+         <tr>
+            <th>9교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+              <td colspan="6">1교시 수업시작은 9시 30분입니다.</td>
+          </tr>
+        </tfoot>
     </table>
 </body>
 </html>
